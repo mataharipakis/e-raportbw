@@ -191,14 +191,23 @@
     const IS_PREVIEW = true; // Ubah menjadi false SAAT DEPLOY / PUBLISH agar terhubung murni ke Firebase tanpa data dummy
 
     // PASTE FIREBASE CONFIG ANDA DI SINI
-    const firebaseConfig = {
-      apiKey: "API_KEY_ANDA",
-      authDomain: "PROJECT_ID.firebaseapp.com",
-      projectId: "PROJECT_ID",
-      storageBucket: "PROJECT_ID.appspot.com",
-      messagingSenderId: "SENDER_ID",
-      appId: "APP_ID"
-    };
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAxu_nJtkJphlFSbRuisvU4aHCBgsAyXOM",
+  authDomain: "e-raportbw.firebaseapp.com",
+  projectId: "e-raportbw",
+  storageBucket: "e-raportbw.firebasestorage.app",
+  messagingSenderId: "992452241828",
+  appId: "1:992452241828:web:d496e0fd25f56968997931"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
     // =========================================================================
     // SERVICE WORKER DINAMIS (PWA 1 FILE)
